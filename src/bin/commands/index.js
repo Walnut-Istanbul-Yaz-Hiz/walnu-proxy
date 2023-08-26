@@ -2,6 +2,7 @@ const { Command } = require("commander");
 
 const walnutProxyCommands = {
   generate: require("./actions/generate/command"),
+  remove: require("./actions/remove/command"),
   proxies: require("./actions/proxies/command"),
   start: require("./actions/start/command"),
   version: require("./actions/version/command"),
