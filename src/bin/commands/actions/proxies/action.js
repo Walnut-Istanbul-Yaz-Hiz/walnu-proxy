@@ -20,10 +20,10 @@ module.exports = async () => {
   var proxies = await knex("proxies").select("*");
 
   const infoTable = new CLITable({
-    head: [chalk.blue("Name"), chalk.blue("Port"), chalk.blue("Target")],
+    head: [chalk.blue("ID"), chalk.blue("Name"), chalk.blue("Port"), chalk.blue("Target")],
   });
 
-  proxies.forEach((proxy) => infoTable.push([proxy.name, proxy.port, proxy.target]));
+  proxies.forEach((proxy) => infoTable.push([proxy.id, proxy.name, proxy.port, proxy.target]));
 
   console.log(infoTable.toString());
 
