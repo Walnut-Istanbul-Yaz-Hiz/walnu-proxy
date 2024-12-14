@@ -20,6 +20,7 @@
   },
   "scripts": {
     "dev": "node index.js",
-    "walnut-proxy": "node src/bin/walnut-proxy.js"
+    "walnut-proxy": "node src/bin/walnut-proxy.js",
+    "start" : "node src/bin/walnut-proxy.js start"
   }
 }
